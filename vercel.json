@@ -1,14 +1,8 @@
 {
-  "builds": [
+  "rewrites": [
     {
-      "src": "pweb/pweb/wsgi.py",
-      "use": "@vercel/python"
-    }
-  ],
-  "routes": [
-    {
-      "src": "/(.*)",
-      "dest": "pweb/pweb/wsgi.py"
+      "source": "/(.*)",
+      "destination": "pweb/pweb/wsgi.py"
     }
   ]
 }
