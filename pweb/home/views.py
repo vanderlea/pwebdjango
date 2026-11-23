@@ -10,4 +10,4 @@ def sobre(request):
     return render(request, 'sobre.html')
 
 def contato(request):
-    return render(request, 'entre_em_contato.html')
+    return render(request, 'contato.html')
